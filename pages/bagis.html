@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Save Earth</title>
+
+	
+	<link rel="icon" href="../img/logo.jpg" type="image/x-icon">
+	
+	<!-- style.css file -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+	<nav>
+		<div class="container clearfix">
+			<div id="logo-box">
+				<a href="" class="logo text-uppercase">
+					<h1>Save <span>Earth</span><i class="fas fa-globe-europe"></i></h1>
+
+				</a>
+			</div>
+			<div id="nav-links" class="responsive">
+				<ul>
+					<li class="nav-item">
+						<a href="../index.html" class="nav-link text-uppercase nav-icon">
+							<i class="fas fa-bars"></i>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a href="../index.html" class="nav-link text-uppercase"><i class="fas fa-home"></i>Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="../pages/hakkimizda.html" class="nav-link text-uppercase"><i class="fas fa-users"></i>Who We Are ?</a>
+					</li>
+					<li class="nav-item">
+						<a href="../pages/projeler.html" class="nav-link text-uppercase"><i class="far fa-images"></i>Projects</a>
+					</li>
+					<li class="nav-item link-active">
+						<a href="../pages/bagis.html" class="nav-link text-uppercase "><i class="fas fa-dollar-sign "></i>Donate</a>
+					</li>
+					<li class="nav-item">
+						<a href="../pages/iletisim.html" class="nav-link text-uppercase"><i class="fas fa-envelope-open-text"></i>Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	
+	<section id="bagis">
+		<div class="container clearfix">
+			<div class="baslik-card text-uppercase mrg-bot">
+				<h2>Donate Monthly to Save Earth</h2>
+			</div>
+			<div class="bagis-left">
+				<img src="../img/saveearthlogo.jpg" alt="save_earth">
+			</div>
+			<div class="bagis-right">
+				<div class="yazi">
+					<p>
+						<b>We're fighting for our environment, and we can't do it without you.</b> In order to stay independent and do the important work we do, Save Earth never takes any money from corporations or government. We rely entirely on support from members like you!
+					</p>
+				</div>
+				<h2 class="text-uppercase">Select to Donations</h2>
+
+				<div id="bagis-boxs" class="clearfix">
+					<div class="bagis-kutu"><input type="radio" class="bagis-check" name="bagis">20$</div>
+					<div class="bagis-kutu"><input type="radio" class="bagis-check" name="bagis">50$</div>
+					<div class="bagis-kutu"><input type="radio" class="bagis-check" name="bagis">100$</div>
+
+					<div class="bagis-kutu"><input type="radio" class="bagis-check" name="bagis">200$</div>
+				</div>
+				<input type="submit" class="submit bagis-sub" value="Submit Donation">
+			</div>
+		</div>
+	</section>
+	<section id="bagiscard">
+		<div class="container">
+			<div class="baslik-card text-uppercase mrg-bot">
+				<h2>How We Use Your Donations?</h2>
+			</div>
+			<div class="bagis-deger">
+				<p>
+					Save Earth is the only global environmental charity that accepts no corporate or government donations so we can maintain a much needed independent voice, but it means we rely on individual supporters like you to fund our work.
+				</p><br>
+				<p>
+					By making a much needed donation you will join "Save Earth" in our work to protect our precious planet and find the solutions we need to our most important environmental issues.
+				</p><br>
+				<p>
+					You are helping Save Earth investigate, campaign, document and lobby for a sustainable balance between humans and the environment.
+				</p>
+			</div>
+		</div>
+	</section>
+	<div class="author">
+		<div class="container">
+			<p>
+				Developed By <a href="https://www.linkedin.com/in/kaan-berat-tokat-b41a9b19a/" target="_blank">Kaan Berat TOKAT</a>
+			</p>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+	</script>
+	<script>
+		$('.nav-icon').click(function() {
+			$('#nav-links').toggleClass("responsive");
+			return false;
+
+
+		});
+
+	</script>
+</body>
+
+</html>

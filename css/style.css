@@ -1,0 +1,565 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 7px;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.5;
+	background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Roboto', monospace;
+	font-weight: 900;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.buyuk-card {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+/* img-fluid */
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+/* clearfix */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* navbar */
+
+nav {
+	position: fixed;
+	width: 100%;
+
+	background-color: rgba(34, 139, 34);
+	color: #fff;
+	padding: 2rem 0;
+	z-index: 500;
+	padding-left: 2rem;
+	padding-right: 0.5rem;
+}
+
+#logo-box {
+	float: left;
+	padding-top: .2rem;
+}
+
+#logo-box .logo {
+	color: #fff;
+	font-weight: 700;
+	font-size: 2.4rem;
+	transition: color 0.5s;
+}
+
+#logo-box .logo span {
+	color: #000;
+}
+
+#logo-box .logo i {
+	color: #000;
+}
+
+#logo-box .logo:hover {
+	color: #000;
+}
+
+#nav-links {
+	float: right;
+}
+
+#nav-links .nav-item {
+	float: left;
+	margin: 0.2rem;
+}
+
+#nav-links .nav-item i {
+	padding-right: .5rem;
+	color: white;
+}
+
+#nav-links .nav-link {
+	font-family: 'Roboto Mono', monospace;
+	display: inline-block;
+	color: #fff;
+	font-size: 1.8rem;
+	font-weight: 700;
+	padding: 1.6rem;
+	letter-spacing: .1rem;
+	transition: text-shadow .5s;
+}
+
+#nav-links .nav-link:hover {
+	text-shadow: 0px 1px 10px;
+}
+
+#nav-links .nav-icon {
+	display: none;
+}
+
+#nav-links .link-active {
+	background-color: #000;
+	border-radius: 10px;
+}
+
+/* Header */
+header {
+	text-align: center;
+}
+
+header .banner {
+	background-image: linear-gradient(rgba(7, 168, 7, 0.15), rgba(7, 168, 7, 0.001)), url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	top: 80px;
+}
+
+header h1 {
+	background: rgba(7, 168, 7, 0.1);
+	color: white;
+	font-size: 3.2rem;
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	font-family: 'Roboto Mono', monospace;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	transition: 0.5s color;
+	z-index: 1;
+}
+
+header h1:hover {
+	color: #000;
+}
+
+/* who we are */
+#hakkimizda .baslik-card h4 {
+	margin-top: 10px;
+}
+
+#hakkimizda .hak-resim {
+	float: none;
+	text-align: center;
+}
+
+#hakkimizda .yazi {
+	float: none;
+}
+
+.hak-resim img {
+	display: inline-block;
+	width: 400px;
+	border-radius: 20%;
+	margin-top: 5rem;
+	margin-right: 1.5rem;
+}
+
+#hakkimizda .yazi {
+	margin-top: 5rem;
+	padding-left: 5rem;
+	text-align: justify;
+	font-size: 2.4rem;
+}
+
+/* author */
+.author {
+	position: relative;
+	padding: 1rem;
+	background-color: #171c21;
+	color: #fff;
+	text-align: center;
+	padding: 3rem 0;
+	font-size: 1.8rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.author p a {
+	color: #18bc9c;
+}
+
+/* section */
+section {
+	padding-top: 13rem;
+	padding-bottom: 5rem;
+}
+
+/* projects */
+
+
+.baslik-card {
+	justify-content: center;
+	color: rgba(7, 168, 7);
+	text-align: center;
+	font-size: 4rem;
+	letter-spacing: .2rem;
+}
+
+section .card {
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+	transition: 0.5s box-shadow, 0.5s border;
+	border-radius: 1rem;
+	float: left;
+	overflow: hidden;
+	padding: .8rem;
+	cursor: pointer;
+}
+
+.resim {
+	height: 300px
+}
+
+section .card .resim img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 1s opacity;
+	border-radius: 1rem;
+
+}
+
+section .card:hover {
+	box-shadow: 0 .3rem 1rem gray;
+}
+
+section .card resim:hover {
+	opacity: 60%;
+}
+
+section .card .yazi {
+	height: 200px padding: 1.7rem;
+	font-size: 18px;
+	color: #000;
+
+}
+
+.yazi h2 {
+	text-align: center;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-transform: capitalize;
+	font-family: font-family: 'Montserrat', sans-serif;
+}
+
+.yazi p {
+	line-height: 1.4;
+	padding-bottom: 3rem;
+	text-align: justify;
+	word-spacing: 10px;
+}
+
+/* donate */
+
+.mrg-bot {
+	margin-bottom: 4rem;
+}
+
+.bagis-deger {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	background-color: green;
+	color: #fff;
+	padding: 24px 16px;
+	font-size: 2.4rem;
+	height: auto;
+	overflow: auto;
+	transition: 0.5s box-shadow, 0.5s border;
+	border-radius: 8px;
+}
+
+section#bagiscard {
+	padding-top: 10rem !important;
+}
+
+section#bagis {
+	padding-bottom: 0rem;
+}
+
+#bagis .bagis-left {
+	float: none;
+	width: 100%;
+	text-align: center;
+}
+
+.bagis-left img {
+	width: 70%;
+	position: relative;
+	top: -15px;
+}
+
+#bagis .bagis-right {
+	float: none;
+	text-align: center;
+	width: 100%;
+
+}
+
+#bagis-boxs {
+	display: flex;
+	justify-content: center;
+}
+
+#bagis .bagis-kutu {
+	background-color: #000;
+	color: #fff;
+	width: 100px;
+	height: 100px;
+	margin: 15px;
+	border: .3rem double rgba(7, 168, 7);
+	border-radius: 1rem;
+	float: left;
+	line-height: 100px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s background;
+}
+
+#bagis .bagis-kutu:hover {
+	background-color: rgba(7, 168, 7);
+}
+
+.bagis-sub {
+	padding: 15px !important;
+	font-family: fantasy, 'Lato';
+	outline: none;
+	border: none;
+	border-radius: 15px;
+}
+
+.bagis-check {
+	cursor: pointer;
+	margin: .3rem;
+}
+
+#bagis .yazi {
+	width: 75%;
+	display: inline-block;
+	text-align: center;
+	font-size: 2.4rem;
+
+}
+
+/* contact */
+
+#contact {
+	text-align: center;
+}
+
+#contact .baslik-card h2 {
+	font-size: 4rem;
+}
+
+.baslik-card h4 {
+	color: #000;
+	font-size: 2.4rem;
+}
+
+#form form {
+	width: 100%;
+	margin: auto;
+}
+
+#form input,
+#form select,
+#form textarea {
+	width: 100%;
+	padding: 2rem;
+	margin: 2rem;
+	font-size: 22px;
+	background-color: rgba(7, 168, 7, 0.08);
+	transition: 1s background, 1s border;
+	outline: none;
+	border: none;
+	border: .2rem solid rgba(7, 168, 7);
+	border-radius: 1.5rem;
+	font-weight: bold;
+}
+
+#form input:focus,
+#form select:focus,
+#form textarea:focus {
+	background-color: rgba(7, 168, 7, 0.4);
+	color: black;
+	border-bottom: .4rem solid #000;
+
+}
+
+#form label {
+	float: left;
+	color: green;
+	padding: 2rem;
+	font-size: 2.4rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.submit {
+	background-color: rgba(7, 168, 7) !important;
+	cursor: pointer;
+	font-size: 2.4rem;
+	text-transform: uppercase;
+	padding: 3rem;
+	transition: 1s background;
+}
+
+.submit:hover {
+	background-color: rgba(7, 168, 7, 0.7) !important;
+	color: white;
+}
+
+/* responsive breakpoints */
+
+
+@media screen and (min-width:576px) {
+
+	html {
+		font-size: 8px;
+	}
+
+
+}
+
+@media screen and (min-width:768px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	section .card {
+		width: 50%;
+	}
+
+	#hakkimizda .hak-resim {
+		float: left;
+	}
+
+	#form form {
+		width: 90%;
+		margin: auto;
+	}
+
+}
+
+@media screen and (min-width:992px) {
+
+	html {
+		font-size: 10px;
+	}
+
+	#bagis .bagis-left {
+		float: left;
+		width: 40%;
+		text-align: right;
+	}
+
+	#bagis .bagis-right {
+		float: left;
+		text-align: center;
+		width: 60%;
+	}
+
+	#bagis bagis-deger {
+		width: 75%;
+	}
+
+	#bagis .bagis-left img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width:1200px) {
+
+	html {
+		font-size: 10px;
+	}
+
+	section .card {
+		width: 33.333%;
+	}
+	#bagis .bagis-left img {
+		width: 85%;
+	}
+
+}
+
+
+
+@media screen and (max-width:992px) {
+	#logo-box {
+		float: none;
+		text-align: left;
+	}
+
+	#nav-links {
+		float: none;
+	}
+
+	#nav-links .nav-item {
+		float: none;
+		display: block;
+		text-align: center;
+		margin: 0.8rem;
+		z-index: 500;
+	}
+
+	#nav-links .nav-link {
+		font-size: 2rem;
+	}
+
+	#nav-links .nav-icon {
+		display: inline-block;
+		position: absolute;
+		top: 5px;
+		right: 8px;
+		font-size: 4rem;
+	}
+
+	#nav-links.responsive .nav-item:not(:first-child) {
+		display: none;
+	}
+
+
+}
