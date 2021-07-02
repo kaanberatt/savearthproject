@@ -1,3 +1,3 @@
 # savearthproject
 Save Earth 
-https://kaanberatt.github.io/saveearth.github.io/
+https://kaanberatt.github.io/savearthproject/
